@@ -57,7 +57,7 @@ async function searchImages(query) {
 
         if (images.length === 0) {
             status.textContent =
-                No images found for "${query}". Try another search.;
+                `No images found for "${query}". Try another search.`;
             return;
         }
 
@@ -89,7 +89,7 @@ async function searchImages(query) {
         });
 
         status.textContent =
-            Showing ${images.length} results for "${query}".;
+            `Showing ${images.length} results for "${query}".`;
 
     } catch (error) {
         console.error("Image search error:", error);
